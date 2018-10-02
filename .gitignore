@@ -1,3 +1,4 @@
 /docker/mysql/data/*
 /docker/redis/data/*
 /docker/nginx/logs/*
+/www/*
