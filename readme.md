@@ -9,6 +9,10 @@ Sebelum Start Docker Compose buat folder ini :
 - /docker/redis/data/
 - /docker/nginx/logs/
 
+Rename file dan folder ini :
+- .env_sample -> .env
+- www_sample -> www
+
 Web root ada di directory docker ./www
 ada 3 example web : info, mysql, redis
 Config nginx virtual host ada di directory ./docker/nginx/sites-available
