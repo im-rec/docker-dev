@@ -20,6 +20,6 @@ ada 3 example config virtual host :
 
 Pointing virtual host docker ke computer host.
 tambah list domain di /etc/hosts :
-127.0.0.1       mysql.local
-127.0.0.1       redis.local
-127.0.0.1       info.local
+- 127.0.0.1       mysql.local
+- 127.0.0.1       redis.local
+- 127.0.0.1       info.local
