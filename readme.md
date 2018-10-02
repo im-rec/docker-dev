@@ -15,6 +15,7 @@ Rename file dan folder ini :
 
 Web root ada di directory docker ./www
 ada 3 example web : info, mysql, redis
+
 Config nginx virtual host ada di directory ./docker/nginx/sites-available
 ada 3 example config virtual host :
 - info.local.conf
