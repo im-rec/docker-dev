@@ -14,16 +14,12 @@ services:
       - ./docker/nginx/logs:/var/log/nginx
     depends_on:
       - php-fpm
-    networks:
-      - networking
 
   php-fpm:
     build:
       context: ./docker/php-fpm
     volumes:
       - ./www:/var/www/html
-    networks:
-      - networking
 
   mysql:
     build:
@@ -34,11 +30,6 @@ services:
         - 3306:3306
     environment:
         MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-        MYSQL_DATABASE: ${MYSQL_DATABASE}
-        MYSQL_USER: ${MYSQL_USER}
-        MYSQL_PASSWORD: ${MYSQL_PASSWORD}
-    networks:
-      - networking
 
   redis:
     build:
@@ -47,9 +38,3 @@ services:
       - ./docker/redis/data:/data
     ports:
         - 6379:6379
-    networks:
-      - networking
-
-networks:
-  networking:
-    driver: bridge
